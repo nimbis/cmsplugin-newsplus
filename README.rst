@@ -1,9 +1,14 @@
 News plugin for django-cms 3.0b3
 ===============================
 
-This plugin provides a simple news feature for django-cms 3.0b3 and newer and
-and tries to keep it as simple as possible without extras like tagging or
-categories but while providing a news feed and menu integration.
+This plugin provides a simple news feature for django-cms 3.0b3 and newer.
+
+It is based off of a fork of cmsplugin-news located here:
+https://bitbucket.org/zerok/cmsplugin-news
+
+The goal of newsplus is to provide the simplicity of cmsplugin-news while
+added some additional functionality, such as images.
+
 
 Requires
 ----------------
@@ -11,6 +16,7 @@ Requires
 * django-cms >= 3.0b3
 * django >= 1.5
 * djangocms-text-ckeditor >= 2.0
+
 
 Setup
 -----
@@ -29,12 +35,14 @@ Setup
   the news application (and optionally the news menu) to it by modifying the
   relevant "advanced settings" of it.
 
+
 Last Tested With
 ----------------
 
 * django-cms: 3.0b3
 * django: 1.5 and 1.6.1
 * djangocms-text-ckeditor: 2.0.5
+
 
 History
 -------

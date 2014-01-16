@@ -2,7 +2,9 @@ from setuptools import setup, find_packages
 
 
 base_requirements = [
-    'django-cms >= 2.0, < 3.0'
+    'django-cms >= 2.0',
+    'django >= 1.5',
+    'djangocms-text-ckeditor >= 2.0'
 ]
 install_requirements = base_requirements + []
 test_requirements = base_requirements + [
@@ -11,13 +13,13 @@ test_requirements = base_requirements + [
 
 
 setup(
-    name='cmsplugin-news',
+    name='cmsplugin-newsplus',
     version='0.4.2',
-    description='Simple news plugin for django-cms 2.x',
+    description='Simple news plugin for django-cms 3.x',
     long_description=open('README.rst').read(),
-    author='Horst Gutmann',
-    author_email='zerok@zerokspot.com',
-    url='http://bitbucket.org/zerok/cmsplugin-news/',
+    author='Eric Amador',
+    author_email='eric.amador14@gmail.com',
+    url='https://github.com/amadornimbis/cmsplugin-newsplus/',
     packages=find_packages(),
     package_data={'cmsplugin_news': [
         'locale/de/LC_MESSAGES/*',
