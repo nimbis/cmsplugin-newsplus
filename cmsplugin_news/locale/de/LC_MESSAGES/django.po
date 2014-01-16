@@ -1,0 +1,105 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: 0.4.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2012-01-22 19:56+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1)\n"
+
+#: admin.py:39
+#, python-format
+msgid "%(count)d newsitem was published"
+msgid_plural "%(count)d newsitems were published"
+msgstr[0] "%(count)d Eintrag wurde veröffentlicht"
+msgstr[1] "%(count)d Einträge wurden veröffentlicht"
+
+#: admin.py:42
+msgid "Publish selected news"
+msgstr "Ausgewählte Einträge veröffentlichen"
+
+#: admin.py:49
+#, python-format
+msgid "%(count)d newsitem was unpublished"
+msgid_plural "%(count)d newsitems were unpublished"
+msgstr[0] "Die Veröffentlichung von einem Eintrag wurde aufgehoben"
+msgstr[1] "Die Veröffentlichung von %(count)d Einträgen wurde aufgehoben"
+
+#: admin.py:52
+msgid "Unpublish selected news"
+msgstr "Veröffentlichung der ausgewählten Einträge aufheben"
+
+#: cms_app.py:8
+msgid "News App"
+msgstr "News-Anwendung"
+
+#: cms_plugins.py:14 templates/cmsplugin_news/latest_news.html:3
+msgid "Latest news"
+msgstr "Aktuelle News"
+
+#: models.py:22
+msgid "Title"
+msgstr "Titel"
+
+#: models.py:23
+msgid "Slug"
+msgstr ""
+
+#: models.py:24
+msgid ""
+"A slug is a short name which uniquely identifies the news item for this day"
+msgstr "Ein Slug ist ein kurzer Name, der einen News-Eintrag eines Tages eindeutig identifiziert"
+
+#: models.py:25
+msgid "Excerpt"
+msgstr "Exzerpt"
+
+#: models.py:26
+msgid "Content"
+msgstr "Inhalt"
+
+#: models.py:28
+msgid "Published"
+msgstr "Veröffentlicht"
+
+#: models.py:29
+msgid "Publication date"
+msgstr "Datum"
+
+#: models.py:38 models.py:39
+msgid "News"
+msgstr "News"
+
+#: models.py:56
+msgid "Number of news items to show"
+msgstr "Anzahl der anzuzeigenden News-Einträge"
+
+#: models.py:57
+msgid "Limits the number of items that will be displayed"
+msgstr "Schränkt die Anzahl der anzuzeigenden Einträge ein"
+
+#: settings.py:18
+msgid "News feed"
+msgstr "News-Feed"
+
+#: settings.py:19
+msgid "A feed full of news"
+msgstr "Ein Feed voller Neuigkeiten"
+
+#: templates/cmsplugin_news/latest_news.html:15
+msgid "No news yet"
+msgstr "Keine News vorhanden"
+
+#: templates/cmsplugin_news/latest_news.html:17
+msgid "Archive"
+msgstr "Archiv"

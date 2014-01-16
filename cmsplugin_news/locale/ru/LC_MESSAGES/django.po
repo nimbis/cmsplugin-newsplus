@@ -1,0 +1,124 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2012-08-09 04:23+0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2)\n"
+
+#: admin.py:37
+#, python-format
+msgid "%(count)d newsitem was published"
+msgid_plural "%(count)d newsitems were published"
+msgstr[0] "%(count)d новость была опубликовано"
+msgstr[1] "%(count)d новости было опубликовано"
+
+#: admin.py:40
+msgid "Publish selected news"
+msgstr "Опубликовать выбранные новости"
+
+#: admin.py:47
+#, python-format
+msgid "%(count)d newsitem was unpublished"
+msgid_plural "%(count)d newsitems were unpublished"
+msgstr[0] "%(count)d новость отменена публикация"
+msgstr[1] "%(count)d новости отменена публикация"
+
+#: admin.py:50
+msgid "Unpublish selected news"
+msgstr "Отменить публикацию выбранных новостей"
+
+#: cms_app.py:10
+msgid "News App"
+msgstr "Приложение новости"
+
+#: cms_plugins.py:15 templates/cmsplugin_news/latest_news.html:3
+msgid "Latest news"
+msgstr "Последние новости"
+
+#: menu.py:14
+msgid "News menu"
+msgstr "Меню новостей"
+
+#: models.py:27
+msgid "Title"
+msgstr "Заголовок"
+
+#: models.py:28
+msgid "Slug"
+msgstr "Путь"
+
+#: models.py:29
+msgid ""
+"A slug is a short name which uniquely identifies the news item for this day"
+msgstr "Короткое имя, используемое в URL, уникально идентифицирующее новость в пределах одного дня"
+
+#: models.py:30
+msgid "Excerpt"
+msgstr "Выдержка"
+
+#: models.py:31
+msgid "Content"
+msgstr "Содержимое"
+
+#: models.py:33
+msgid "Published"
+msgstr "Опубликовано"
+
+#: models.py:34
+msgid "Publication date"
+msgstr "Дата публикации"
+
+#: models.py:42
+msgid "Link"
+msgstr "Ссылка"
+
+#: models.py:43
+msgid ""
+"This link will be used a absolute url for this item and replaces the view "
+"logic. <br />Note that by default this only applies for items with an empty "
+"\"content\" field."
+msgstr ""
+"Абсолютный адрес (начинающийся с http). Эта ссылка будет использованна взамен отображения содержимого новости."
+"<br />Обратите внимание, что по умолчанию это относится только к новости с незаполненным полем \"содержимое\"."
+
+#: models.py:49 models.py:50
+msgid "News"
+msgstr "Новости"
+
+#: models.py:70
+msgid "Number of news items to show"
+msgstr "Количество новостей к показу"
+
+#: models.py:71
+msgid "Limits the number of items that will be displayed"
+msgstr "Ограничить количество отображаемых новостей"
+
+#: settings.py:18
+msgid "News feed"
+msgstr "Новостная лента"
+
+#: settings.py:19
+msgid "A feed full of news"
+msgstr "Новостная лента полная новостей"
+
+#: templates/cmsplugin_news/latest_news.html:15
+msgid "No news yet"
+msgstr "Новостей нет"
+
+#: templates/cmsplugin_news/latest_news.html:17
+msgid "Archive"
+msgstr "Архив"

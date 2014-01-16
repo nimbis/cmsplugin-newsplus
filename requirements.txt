@@ -1,0 +1,4 @@
+django>=1.5
+# django-cms>=3.0
+git+git://github.com/divio/django-cms.git
+django-text-ckeditor >= 2.0

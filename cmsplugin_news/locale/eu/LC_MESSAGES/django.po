@@ -1,0 +1,123 @@
+# Basque translation of cmsplugin_news
+# Copyright (C) 2012 Horst Gutmann
+# This file is distributed under the same license as the cmsplugin_news package.
+# Ales Zabala Alava (Shagi) <shagi@gisa-elkartea.org>, 2012.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: 0.4.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2012-08-08 22:16+0200\n"
+"PO-Revision-Date: 2012-08-08 22:24+0200\n"
+"Last-Translator: Ales Zabala Alava (Shagi) <shagi@gisa-elkartea.org>\n"
+"Language-Team: Basque <eu@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1)\n"
+
+#: admin.py:37
+#, python-format
+msgid "%(count)d newsitem was published"
+msgid_plural "%(count)d newsitems were published"
+msgstr[0] "Berri %(count)d bat argitaratu da"
+msgstr[1] "%(count)d berri argitaratu dira"
+
+#: admin.py:40
+msgid "Publish selected news"
+msgstr "Hautatutako berriak argitaratu"
+
+#: admin.py:47
+#, python-format
+msgid "%(count)d newsitem was unpublished"
+msgid_plural "%(count)d newsitems were unpublished"
+msgstr[0] "Berri %(count)d ez-argitaratu da"
+msgstr[1] "%(count)d berri ez-argitaratu dira"
+
+#: admin.py:50
+msgid "Unpublish selected news"
+msgstr "Hautatutako berriak ez-argitaratu"
+
+#: cms_app.py:10
+msgid "News App"
+msgstr "Berriak aplikazioa"
+
+#: cms_plugins.py:15 templates/cmsplugin_news/latest_news.html:3
+msgid "Latest news"
+msgstr "Azken berriak"
+
+#: menu.py:14
+msgid "News menu"
+msgstr "Berriak menua"
+
+#: models.py:27
+msgid "Title"
+msgstr "Izenburua"
+
+#: models.py:28
+msgid "Slug"
+msgstr "Slug"
+
+#: models.py:29
+msgid ""
+"A slug is a short name which uniquely identifies the news item for this day"
+msgstr "Slug-a berria egun honetarako esklusiboki identifikatzen duen izen laburra da"
+
+#: models.py:30
+msgid "Excerpt"
+msgstr "Zatia"
+
+#: models.py:31
+msgid "Content"
+msgstr "Edukia"
+
+#: models.py:33
+msgid "Published"
+msgstr "Argitaratuta"
+
+#: models.py:34
+msgid "Publication date"
+msgstr "Argitalpen data"
+
+#: models.py:42
+msgid "Link"
+msgstr "Esteka"
+
+#: models.py:43
+msgid ""
+"This link will be used a absolute url for this item and replaces the view "
+"logic. <br />Note that by default this only applies for items with an empty "
+"\"content\" field."
+msgstr ""
+"Esteka hau elementu honen url absolutu gezala erabiliko da eta defektuzko "
+"ikuspegia gainidatziko du. <br />Ohartu defektuz hau edukirik ez dagoenean "
+"bakarrik aplikatzen dela."
+
+#: models.py:49 models.py:50
+msgid "News"
+msgstr "Berriak"
+
+#: models.py:70
+msgid "Number of news items to show"
+msgstr "Erakutsiko diren berri kopurua"
+
+#: models.py:71
+msgid "Limits the number of items that will be displayed"
+msgstr "Ikusiko diren berrien kopurua mugatzen du"
+
+#: settings.py:18
+msgid "News feed"
+msgstr "Berrien jarioa"
+
+#: settings.py:19
+msgid "A feed full of news"
+msgstr "Berriz betetako jarioa"
+
+#: templates/cmsplugin_news/latest_news.html:15
+msgid "No news yet"
+msgstr "Berririk ez oraingoz"
+
+#: templates/cmsplugin_news/latest_news.html:17
+msgid "Archive"
+msgstr "Artxiboa"

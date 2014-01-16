@@ -1,0 +1,123 @@
+# Spanish translation of cmsplugin_news
+# Copyright (C) 2012 Horst Gutmann
+# This file is distributed under the same license as the cmsplugin_news package.
+# Ales Zabala Alava (Shagi) <shagi@gisa-elkartea.org>, 2012.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: 0.4.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2012-08-08 21:03+0200\n"
+"PO-Revision-Date: 2012-08-08 21:14+0200\n"
+"Last-Translator: Ales Zabala Alava (Shagi) <shagi@gisa-elkartea.org>\n"
+"Language-Team: Spanish <es@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1)\n"
+
+#: admin.py:37
+#, python-format
+msgid "%(count)d newsitem was published"
+msgid_plural "%(count)d newsitems were published"
+msgstr[0] "Se ha publicado %(count)d noticia"
+msgstr[1] "Se han publicado %(count)d noticias"
+
+#: admin.py:40
+msgid "Publish selected news"
+msgstr "Publicar las noticias seleccionadas"
+
+#: admin.py:47
+#, python-format
+msgid "%(count)d newsitem was unpublished"
+msgid_plural "%(count)d newsitems were unpublished"
+msgstr[0] "Se ha despublicado %(count)d noticia"
+msgstr[1] "Se han despublicado %(count)d noticias"
+
+#: admin.py:50
+msgid "Unpublish selected news"
+msgstr "Despublicar las noticias seleccionadas"
+
+#: cms_app.py:10
+msgid "News App"
+msgstr "Aplicación noticias"
+
+#: cms_plugins.py:15 templates/cmsplugin_news/latest_news.html:3
+msgid "Latest news"
+msgstr "Últimas noticias"
+
+#: menu.py:14
+msgid "News menu"
+msgstr "Menú noticias"
+
+#: models.py:27
+msgid "Title"
+msgstr "Título"
+
+#: models.py:28
+msgid "Slug"
+msgstr "Slug"
+
+#: models.py:29
+msgid ""
+"A slug is a short name which uniquely identifies the news item for this day"
+msgstr "Un slug es un nombre corto que identifica unívocamente la noticia para este día"
+
+#: models.py:30
+msgid "Excerpt"
+msgstr "Extracto"
+
+#: models.py:31
+msgid "Content"
+msgstr "Contenido"
+
+#: models.py:33
+msgid "Published"
+msgstr "Publicado"
+
+#: models.py:34
+msgid "Publication date"
+msgstr "Fecha de publicación"
+
+#: models.py:42
+msgid "Link"
+msgstr "Enlace"
+
+#: models.py:43
+msgid ""
+"This link will be used a absolute url for this item and replaces the view "
+"logic. <br />Note that by default this only applies for items with an empty "
+"\"content\" field."
+msgstr ""
+"Este enlace se usa como url absoluta de este elemento y reemplaza las "
+"views. <br />Ten en cuenta que por defecto esto solo se aplica para "
+"elmentos sin contenido."
+
+#: models.py:49 models.py:50
+msgid "News"
+msgstr "Noticias"
+
+#: models.py:70
+msgid "Number of news items to show"
+msgstr "Número de noticias a mostrar"
+
+#: models.py:71
+msgid "Limits the number of items that will be displayed"
+msgstr "Limita el número de noticias que se mostrará"
+
+#: settings.py:18
+msgid "News feed"
+msgstr "Fuente de noticias"
+
+#: settings.py:19
+msgid "A feed full of news"
+msgstr "Una fuente llena de noticias"
+
+#: templates/cmsplugin_news/latest_news.html:15
+msgid "No news yet"
+msgstr "Ninguna noticia todavía"
+
+#: templates/cmsplugin_news/latest_news.html:17
+msgid "Archive"
+msgstr "Archivo"
