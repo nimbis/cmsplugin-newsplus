@@ -1,6 +1,6 @@
-# Basque translation of cmsplugin_news
+# Basque translation of cmsplugin_newsplus
 # Copyright (C) 2012 Horst Gutmann
-# This file is distributed under the same license as the cmsplugin_news package.
+# This file is distributed under the same license as the cmsplugin_newsplus package.
 # Ales Zabala Alava (Shagi) <shagi@gisa-elkartea.org>, 2012.
 #
 msgid ""
@@ -43,7 +43,7 @@ msgstr "Hautatutako berriak ez-argitaratu"
 msgid "News App"
 msgstr "Berriak aplikazioa"
 
-#: cms_plugins.py:15 templates/cmsplugin_news/latest_news.html:3
+#: cms_plugins.py:15 templates/cmsplugin_newsplus/latest_news.html:3
 msgid "Latest news"
 msgstr "Azken berriak"
 
@@ -114,10 +114,10 @@ msgstr "Berrien jarioa"
 msgid "A feed full of news"
 msgstr "Berriz betetako jarioa"
 
-#: templates/cmsplugin_news/latest_news.html:15
+#: templates/cmsplugin_newsplus/latest_news.html:15
 msgid "No news yet"
 msgstr "Berririk ez oraingoz"
 
-#: templates/cmsplugin_news/latest_news.html:17
+#: templates/cmsplugin_newsplus/latest_news.html:17
 msgid "Archive"
 msgstr "Artxiboa"

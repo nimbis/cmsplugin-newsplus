@@ -1,6 +1,6 @@
-# Spanish translation of cmsplugin_news
+# Spanish translation of cmsplugin_newsplus
 # Copyright (C) 2012 Horst Gutmann
-# This file is distributed under the same license as the cmsplugin_news package.
+# This file is distributed under the same license as the cmsplugin_newsplus package.
 # Ales Zabala Alava (Shagi) <shagi@gisa-elkartea.org>, 2012.
 #
 msgid ""
@@ -43,7 +43,7 @@ msgstr "Despublicar las noticias seleccionadas"
 msgid "News App"
 msgstr "Aplicación noticias"
 
-#: cms_plugins.py:15 templates/cmsplugin_news/latest_news.html:3
+#: cms_plugins.py:15 templates/cmsplugin_newsplus/latest_news.html:3
 msgid "Latest news"
 msgstr "Últimas noticias"
 
@@ -114,10 +114,10 @@ msgstr "Fuente de noticias"
 msgid "A feed full of news"
 msgstr "Una fuente llena de noticias"
 
-#: templates/cmsplugin_news/latest_news.html:15
+#: templates/cmsplugin_newsplus/latest_news.html:15
 msgid "No news yet"
 msgstr "Ninguna noticia todavía"
 
-#: templates/cmsplugin_news/latest_news.html:17
+#: templates/cmsplugin_newsplus/latest_news.html:17
 msgid "Archive"
 msgstr "Archivo"

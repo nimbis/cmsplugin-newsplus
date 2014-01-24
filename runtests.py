@@ -79,7 +79,7 @@ def get_test_runner():
             'cms.plugins.inherit',
             'south',
             'sekizai',
-            'cmsplugin_news',
+            'cmsplugin_newsplus',
         ],
         LANGUAGE_CODE="en",
         LANGUAGES=(
@@ -108,7 +108,7 @@ def get_test_runner():
         TIME_TESTS=True,
         CMS_TEMPLATES=[('test_template.html', 'base')],
         TEMPLATE_DIRS=[join(dirname(__file__), 'test_setup', 'templates')],
-        ROOT_URLCONF='cmsplugin_news.urls'
+        ROOT_URLCONF='cmsplugin_newsplus.urls'
     )
     from south.management.commands import patch_for_test_db_setup
     patch_for_test_db_setup()
@@ -118,7 +118,7 @@ def get_test_runner():
 
 def main():
     test_runner = get_test_runner()(verbosity=1, interactive=False)
-    failures = test_runner.run_tests(['cmsplugin_news'])
+    failures = test_runner.run_tests(['cmsplugin_newsplus'])
     sys.exit(bool(failures))
 
 if __name__ == '__main__':

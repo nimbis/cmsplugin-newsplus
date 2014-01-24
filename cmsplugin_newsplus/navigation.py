@@ -4,7 +4,7 @@ from django.core.urlresolvers import reverse
 
 from menus.base import NavigationNode
 
-from cmsplugin_news.models import News
+from cmsplugin_newsplus.models import News
 
 
 logger = logging.getLogger(__name__)

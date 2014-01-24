@@ -1,18 +1,18 @@
 """
-Tests for the cmsplugin_news app
+Tests for the cmsplugin_newsplus app
 """
 
 import datetime
 
 from django.test import TestCase
 
-from cmsplugin_news.models import News
+from cmsplugin_newsplus.models import News
 
 from . import settings
 
 
 class NewsTest(TestCase):
-    urls = 'cmsplugin_news.urls'
+    urls = 'cmsplugin_newsplus.urls'
 
     def setUp(self):
         self.today = datetime.datetime.today()

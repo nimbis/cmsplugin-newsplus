@@ -9,8 +9,8 @@ class NewsFeed(Feed):
     title = settings.FEED_TITLE
     description = settings.FEED_DESCRIPTION
 
-    title_template = 'cmsplugin_news/feeds/item_title.html'
-    description_template = 'cmsplugin_news/feeds/item_description.html'
+    title_template = 'cmsplugin_newsplus/feeds/item_title.html'
+    description_template = 'cmsplugin_newsplus/feeds/item_description.html'
 
     @property
     def link(self):

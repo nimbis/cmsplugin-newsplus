@@ -45,7 +45,7 @@ class WYMEditor(Textarea):
             'installed_plugins': self.installed_plugins,
         }
         return mark_safe(render_to_string(
-            'cmsplugin_news/widgets/wymeditor.html', context))
+            'cmsplugin_newsplus/widgets/wymeditor.html', context))
 
     def render(self, name, value, attrs=None):
         return self.render_textarea(name, value, attrs) + \

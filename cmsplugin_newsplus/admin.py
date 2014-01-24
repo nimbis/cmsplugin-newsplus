@@ -2,8 +2,8 @@ from django.utils.translation import ugettext_lazy as _
 from django.utils.translation import ungettext
 from django.contrib import admin
 
-from cmsplugin_news.forms import NewsForm
-from cmsplugin_news.models import News, NewsImage
+from cmsplugin_newsplus.forms import NewsForm
+from cmsplugin_newsplus.models import News, NewsImage
 
 
 class NewsImageInline(admin.TabularInline):

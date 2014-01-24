@@ -29,7 +29,7 @@ class TinyMCEEditor(TinyMCE):
             'installed_plugins': self.installed_plugins,
         }
         return mark_safe(render_to_string(
-            'cmsplugin_news/widgets/tinymce.html', context))
+            'cmsplugin_newsplus/widgets/tinymce.html', context))
 
     def _media(self):
         media = super(TinyMCEEditor, self)._media()

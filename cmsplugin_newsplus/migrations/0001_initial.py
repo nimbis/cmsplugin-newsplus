@@ -1,39 +1,39 @@
 
 from south.db import db
 from django.db import models
-from cmsplugin_news.models import *
+from cmsplugin_newsplus.models import *
 
 class Migration:
     
     def forwards(self, orm):
         
         # Adding model 'News'
-        db.create_table('cmsplugin_news_news', (
-            ('id', orm['cmsplugin_news.News:id']),
-            ('title', orm['cmsplugin_news.News:title']),
-            ('slug', orm['cmsplugin_news.News:slug']),
-            ('excerpt', orm['cmsplugin_news.News:excerpt']),
-            ('content', orm['cmsplugin_news.News:content']),
-            ('is_published', orm['cmsplugin_news.News:is_published']),
-            ('pub_date', orm['cmsplugin_news.News:pub_date']),
-            ('created', orm['cmsplugin_news.News:created']),
-            ('updated', orm['cmsplugin_news.News:updated']),
+        db.create_table('cmsplugin_newsplus_news', (
+            ('id', orm['cmsplugin_newsplus.News:id']),
+            ('title', orm['cmsplugin_newsplus.News:title']),
+            ('slug', orm['cmsplugin_newsplus.News:slug']),
+            ('excerpt', orm['cmsplugin_newsplus.News:excerpt']),
+            ('content', orm['cmsplugin_newsplus.News:content']),
+            ('is_published', orm['cmsplugin_newsplus.News:is_published']),
+            ('pub_date', orm['cmsplugin_newsplus.News:pub_date']),
+            ('created', orm['cmsplugin_newsplus.News:created']),
+            ('updated', orm['cmsplugin_newsplus.News:updated']),
         ))
-        db.send_create_signal('cmsplugin_news', ['News'])
+        db.send_create_signal('cmsplugin_newsplus', ['News'])
         
         # Adding model 'LatestNewsPlugin'
         db.create_table('cmsplugin_latestnewsplugin', (
-            ('cmsplugin_ptr', orm['cmsplugin_news.LatestNewsPlugin:cmsplugin_ptr']),
-            ('limit', orm['cmsplugin_news.LatestNewsPlugin:limit']),
+            ('cmsplugin_ptr', orm['cmsplugin_newsplus.LatestNewsPlugin:cmsplugin_ptr']),
+            ('limit', orm['cmsplugin_newsplus.LatestNewsPlugin:limit']),
         ))
-        db.send_create_signal('cmsplugin_news', ['LatestNewsPlugin'])
+        db.send_create_signal('cmsplugin_newsplus', ['LatestNewsPlugin'])
         
     
     
     def backwards(self, orm):
         
         # Deleting model 'News'
-        db.delete_table('cmsplugin_news_news')
+        db.delete_table('cmsplugin_newsplus_news')
         
         # Deleting model 'LatestNewsPlugin'
         db.delete_table('cmsplugin_latestnewsplugin')
@@ -84,12 +84,12 @@ class Migration:
             'template': ('django.db.models.fields.CharField', [], {'max_length': '100'}),
             'tree_id': ('django.db.models.fields.PositiveIntegerField', [], {'db_index': 'True'})
         },
-        'cmsplugin_news.latestnewsplugin': {
+        'cmsplugin_newsplus.latestnewsplugin': {
             'Meta': {'db_table': "'cmsplugin_latestnewsplugin'"},
             'cmsplugin_ptr': ('django.db.models.fields.related.OneToOneField', [], {'to': "orm['cms.CMSPlugin']", 'unique': 'True', 'primary_key': 'True'}),
             'limit': ('django.db.models.fields.PositiveIntegerField', [], {})
         },
-        'cmsplugin_news.news': {
+        'cmsplugin_newsplus.news': {
             'content': ('django.db.models.fields.TextField', [], {'blank': 'True'}),
             'created': ('django.db.models.fields.DateTimeField', [], {'auto_now_add': 'True', 'blank': 'True'}),
             'excerpt': ('django.db.models.fields.TextField', [], {'blank': 'True'}),
@@ -108,4 +108,4 @@ class Migration:
         }
     }
     
-    complete_apps = ['cmsplugin_news']
+    complete_apps = ['cmsplugin_newsplus']

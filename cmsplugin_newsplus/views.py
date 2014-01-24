@@ -29,7 +29,7 @@ class ArchiveIndexView(PublishedNewsMixin, generic_views.ListView):
     ListView.
     """
     paginate_by = settings.ARCHIVE_PAGE_SIZE
-    template_name = 'cmsplugin_news/news_archive.html'
+    template_name = 'cmsplugin_newsplus/news_archive.html'
     include_yearlist = True
     date_field = 'pub_date'
 

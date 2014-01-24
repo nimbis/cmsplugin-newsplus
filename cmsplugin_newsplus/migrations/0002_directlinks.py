@@ -9,13 +9,13 @@ class Migration(SchemaMigration):
     def forwards(self, orm):
         
         # Adding field 'News.link'
-        db.add_column('cmsplugin_news_news', 'link', self.gf('django.db.models.fields.URLField')(max_length=200, null=True, blank=True), keep_default=False)
+        db.add_column('cmsplugin_newsplus_news', 'link', self.gf('django.db.models.fields.URLField')(max_length=200, null=True, blank=True), keep_default=False)
 
 
     def backwards(self, orm):
         
         # Deleting field 'News.link'
-        db.delete_column('cmsplugin_news_news', 'link')
+        db.delete_column('cmsplugin_newsplus_news', 'link')
 
 
     models = {
@@ -39,12 +39,12 @@ class Migration(SchemaMigration):
             'id': ('django.db.models.fields.AutoField', [], {'primary_key': 'True'}),
             'slot': ('django.db.models.fields.CharField', [], {'max_length': '50', 'db_index': 'True'})
         },
-        'cmsplugin_news.latestnewsplugin': {
+        'cmsplugin_newsplus.latestnewsplugin': {
             'Meta': {'object_name': 'LatestNewsPlugin', 'db_table': "'cmsplugin_latestnewsplugin'", '_ormbases': ['cms.CMSPlugin']},
             'cmsplugin_ptr': ('django.db.models.fields.related.OneToOneField', [], {'to': "orm['cms.CMSPlugin']", 'unique': 'True', 'primary_key': 'True'}),
             'limit': ('django.db.models.fields.PositiveIntegerField', [], {})
         },
-        'cmsplugin_news.news': {
+        'cmsplugin_newsplus.news': {
             'Meta': {'ordering': "('-pub_date',)", 'object_name': 'News'},
             'content': ('django.db.models.fields.TextField', [], {'blank': 'True'}),
             'created': ('django.db.models.fields.DateTimeField', [], {'auto_now_add': 'True', 'blank': 'True'}),
@@ -59,4 +59,4 @@ class Migration(SchemaMigration):
         }
     }
 
-    complete_apps = ['cmsplugin_news']
+    complete_apps = ['cmsplugin_newsplus']
