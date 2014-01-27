@@ -21,11 +21,11 @@ setup(
     author_email='eric.amador14@gmail.com',
     url='https://github.com/amadornimbis/cmsplugin-newsplus/',
     packages=find_packages(),
-    package_data={'cmsplugin_newsplusplus': [
+    package_data={'cmsplugin_newsplus': [
         'locale/de/LC_MESSAGES/*',
-        'templates/cmsplugin_newsplusplus/*.html',
-        'templates/cmsplugin_newsplusplus/feeds/*.html',
-        'templates/cmsplugin_newsplusplus/widgets/*.html']
+        'templates/cmsplugin_newsplus/*.html',
+        'templates/cmsplugin_newsplus/feeds/*.html',
+        'templates/cmsplugin_newsplus/widgets/*.html']
     },
     license='BSD',
     classifiers=[
