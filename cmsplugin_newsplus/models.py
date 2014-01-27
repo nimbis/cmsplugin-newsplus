@@ -1,8 +1,7 @@
-import datetime
-
 from django.db import models
 from django.utils.translation import ugettext_lazy as _
 from django.core.urlresolvers import reverse
+from django.utils import timezone
 
 from cms.models import CMSPlugin
 
@@ -16,7 +15,7 @@ class PublishedNewsManager(models.Manager):
     def get_query_set(self):
         return super(PublishedNewsManager, self).get_query_set() \
                     .filter(is_published=True) \
-                    .filter(pub_date__lte=datetime.datetime.now())
+                    .filter(pub_date__lte=timezone.now())
 
 
 class News(models.Model):
@@ -31,7 +30,7 @@ class News(models.Model):
     content = models.TextField(_('Content'), blank=True)
 
     is_published = models.BooleanField(_('Published'), default=False)
-    pub_date = models.DateTimeField(_('Publication date'), default=datetime.datetime.now)
+    pub_date = models.DateTimeField(_('Publication date'), default=timezone.now)
 
     created = models.DateTimeField(auto_now_add=True, editable=False)
     updated = models.DateTimeField(auto_now=True, editable=False)
