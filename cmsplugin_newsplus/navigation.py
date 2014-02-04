@@ -27,26 +27,31 @@ def get_nodes(request):
         if not date.year in years_done:
             years_done.append(date.year)
             year_node = NavigationNode(date.year,
-                reverse('news_archive_year', kwargs=dict(year=date.year)),
-                'newsitem-year-%d' % (date.year,))
+                                       reverse('news_archive_year',
+                                               kwargs=dict(year=date.year)),
+                                       'newsitem-year-%d' % (date.year,))
             year_node.childrens = []
             months_done = []
             res.append(year_node)
 
         if not date.month in months_done:
             months_done.append(date.month)
-            month_node = NavigationNode(datetime.strftime(date, '%B'),
-                                reverse('news_archive_month', kwargs=dict(
-                                    year=date.year,
-                                    month=datetime.strftime(date, '%m'))),
-                                'newsitem-month-%d.%d' % (date.year, date.month))
+            month_node = NavigationNode(
+                datetime.strftime(date, '%B'),
+                reverse('news_archive_month', kwargs=dict(
+                    year=date.year,
+                    month=datetime.strftime(date, '%m'))),
+                'newsitem-month-%d.%d' % (
+                    date.year,
+                    date.month))
             month_node.childrens = []
             days_done = []
             year_node.childrens.append(month_node)
 
         if not date.day in days_done:
             days_done.append(date.day)
-            day_node = NavigationNode(datetime.strftime(date, '%d'),
+            day_node = NavigationNode(
+                datetime.strftime(date, '%d'),
                 reverse('news_archive_day', kwargs=dict(
                     year=date.year,
                     month=datetime.strftime(date, '%m'),
@@ -59,7 +64,8 @@ def get_nodes(request):
 
         if not item.slug in slug_done:
             slug_done.append(item.slug)
-            item_node = NavigationNode(item.title, item.get_absolute_url(),
+            item_node = NavigationNode(
+                item.title, item.get_absolute_url(),
                 'newsitem-pk-%s' % (str(item.pk),))
             item_node.childrens = []
             day_node.childrens.append(item_node)

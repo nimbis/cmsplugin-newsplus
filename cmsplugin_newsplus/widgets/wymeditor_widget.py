@@ -20,7 +20,7 @@ class WYMEditor(Textarea):
         """
         Create a widget for editing text + plugins.
 
-        installed_plugins is a list of plugins to display that are text_enabled
+        installed_plugins is a list of plugins to display thatare text_enabled
         """
         self.attrs = {'class': 'wymeditor'}
         if attrs:

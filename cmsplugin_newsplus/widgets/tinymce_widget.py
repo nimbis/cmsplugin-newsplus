@@ -33,10 +33,12 @@ class TinyMCEEditor(TinyMCE):
 
     def _media(self):
         media = super(TinyMCEEditor, self)._media()
-        media.add_js([cms_static_url(path) for path in (
+        media.add_js(
+            [cms_static_url(path) for path in (
                 'js/plugins/admincompat.js',
                 )])
-        media.add_css({"all": [cms_static_url(path) for path in (
+        media.add_css(
+            {"all": [cms_static_url(path) for path in (
                 'css/jquery/cupertino/jquery-ui.css',
                 'css/tinymce_toolbar.css')]})
         return media
@@ -49,7 +51,8 @@ class TinyMCEEditor(TinyMCE):
         value = smart_unicode(value)
         final_attrs = self.build_attrs(attrs)
         final_attrs['name'] = name
-        assert 'id' in final_attrs, "TinyMCE widget attributes must contain 'id'"
+        assert 'id' in final_attrs, \
+            "TinyMCE widget attributes must contain 'id'"
         mce_config = cms.plugins.text.settings.TINYMCE_CONFIG.copy()
         mce_config.update(get_language_config(self.content_language))
         if tinymce.settings.USE_FILEBROWSER:
@@ -83,6 +86,14 @@ class TinyMCEEditor(TinyMCE):
                 'debug': False,
             }
             c_json = simplejson.dumps(compressor_config)
-            html.append(u'<script type="text/javascript">tinyMCE_GZ.init(%s);</script>' % (c_json))
-        html.append(u'<script type="text/javascript">%s;\ntinyMCE.init(%s);</script>' % (self.render_additions(name, value, attrs), json))
+            html.append(
+                (u'<script type="text/javascript">'
+                    'tinyMCE_GZ.init(%s);</script>') % (c_json))
+        html.append(
+            (u'<script type="text/javascript">%s;\ntinyMCE.init(%s);'
+                '</script>') % (self.render_additions(
+                name,
+                value,
+                attrs),
+                json))
         return mark_safe(u'\n'.join(html))

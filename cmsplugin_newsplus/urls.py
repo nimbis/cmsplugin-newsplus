@@ -4,7 +4,8 @@ from . import feeds
 from . import views
 
 
-urlpatterns = patterns('django.views.generic.date_based',
+urlpatterns = patterns(
+    'django.views.generic.date_based',
     url(r'^$',
         views.ArchiveIndexView.as_view(), name='news_archive_index'),
 
@@ -17,7 +18,8 @@ urlpatterns = patterns('django.views.generic.date_based',
     url(r'^(?P<year>\d{4})/(?P<month>\d{2})/(?P<day>\d{2})/$',
         views.DayArchiveView.as_view(), name='news_archive_day'),
 
-    url(r'^(?P<year>\d{4})/(?P<month>\d{2})/(?P<day>\d{2})/(?P<slug>[-\w]+)/$',
+    url((r'^(?P<year>\d{4})/(?P<month>\d{2})/(?P<day>\d{2})/'
+         r'(?P<slug>[-\w]+)/$'),
         views.DetailView.as_view(), name='news_detail'),
 
     url(r'^feed/$', feeds.NewsFeed())

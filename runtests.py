@@ -6,7 +6,8 @@ from django.conf import settings
 
 def get_test_runner():
     # This code is based on the new test-setup in django-cms 2.3
-    # https://raw.github.com/divio/django-cms/595d9092d95ceb45ae666b78a86a4c71ed395396/cms/test_utils/cli.py
+    # https://raw.github.com/divio/django-cms/
+    # 595d9092d95ceb45ae666b78a86a4c71ed395396/cms/test_utils/cli.py
     settings.configure(
         CACHE_BACKEND='locmem:///',
         DEBUG=True,
