@@ -1,6 +1,8 @@
 News plugin for django-cms 3.0b3
 ===============================
 
+.. image:: https://travis-ci.org/nimbis/cmsplugin-newsplus.png?branch=master   :target: https://travis-ci.org/nimbis/cmsplugin-newsplus:
+
 This plugin provides a simple news feature for django-cms 3.0b3 and newer.
 
 It is based off of a fork of cmsplugin-news located here:
@@ -47,5 +49,10 @@ Last Tested With
 History
 -------
 
-0.1:
-    * Initial commit. Compatibility fixes.
+0.1.1:
+    * Compatility fixes for Django 1.6
+    * Cleaned up repo.
+    * Added Travis integration.
+
+0.1.0:
+    * Initial commit.
