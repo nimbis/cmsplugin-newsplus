@@ -1,7 +1,8 @@
 News plugin for django-cms 3.0b3
-===============================
+=================================
 
-.. image:: https://travis-ci.org/nimbis/cmsplugin-newsplus.png?branch=master   :target: https://travis-ci.org/nimbis/cmsplugin-newsplus:
+.. image:: https://travis-ci.org/nimbis/cmsplugin-newsplus.png?branch=master
+    :target: https://travis-ci.org/nimbis/cmsplugin-newsplus
 
 This plugin provides a simple news feature for django-cms 3.0b3 and newer.
 
@@ -36,14 +37,6 @@ Setup
 * In order to integrate the news-plugin with your website, create a page and add
   the news application (and optionally the news menu) to it by modifying the
   relevant "advanced settings" of it.
-
-
-Last Tested With
-----------------
-
-* django-cms: 3.0b3
-* django: 1.5 and 1.6.1
-* djangocms-text-ckeditor: 2.0.5
 
 
 History
