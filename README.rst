@@ -26,7 +26,7 @@ Setup
 * Download this package and run `python setup.py install` or add it in
   some other way to your current PYTHON_PATH
 
-* Add 'cmsplugin_news' to INSTALLED_APPS
+* Add 'cmsplugin_newsplus' to INSTALLED_APPS
 
 * If you're using South execute `python manage.py migrate`, Otherwise run
   `python manage.py syncdb` within your project directory.

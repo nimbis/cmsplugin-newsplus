@@ -29,7 +29,7 @@ class ArchiveIndexView(PublishedNewsMixin, generic_views.ListView):
     ListView.
     """
     paginate_by = settings.ARCHIVE_PAGE_SIZE
-    template_name = 'cmsplugin_news/news_archive.html'
+    template_name = 'cmsplugin_newsplus/news_archive.html'
     include_yearlist = True
     date_field = 'pub_date'
 
@@ -37,7 +37,7 @@ class ArchiveIndexView(PublishedNewsMixin, generic_views.ListView):
         context = super(ArchiveIndexView, self).get_context_data(**kwargs)
         context['latest'] = context['object_list']
         if self.include_yearlist:
-            date_list = self.get_queryset().dates('pub_date', 'year')[::-1]
+            date_list = self.get_queryset().datetimes('pub_date', 'year')[::-1]
             context['date_list'] = date_list
         return context
 

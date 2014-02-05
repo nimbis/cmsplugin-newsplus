@@ -1,21 +1,22 @@
 """
-Tests for the cmsplugin_news app
+Tests for the cmsplugin_newsplus app
 """
 
+from django.utils.timezone import utc
 import datetime
 
 from django.test import TestCase
 
-from cmsplugin_news.models import News
+from cmsplugin_newsplus.models import News
 
 from . import settings
 
 
 class NewsTest(TestCase):
-    urls = 'cmsplugin_news.urls'
+    urls = 'cmsplugin_newsplus.urls'
 
     def setUp(self):
-        self.today = datetime.datetime.today()
+        self.today = datetime.datetime.today().replace(tzinfo=utc)
         self.yesterday = self.today - datetime.timedelta(days=1)
         self.tomorrow = self.today + datetime.timedelta(days=1)
 

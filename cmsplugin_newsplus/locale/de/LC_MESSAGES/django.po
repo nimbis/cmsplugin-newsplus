@@ -43,7 +43,7 @@ msgstr "Veröffentlichung der ausgewählten Einträge aufheben"
 msgid "News App"
 msgstr "News-Anwendung"
 
-#: cms_plugins.py:14 templates/cmsplugin_news/latest_news.html:3
+#: cms_plugins.py:14 templates/cmsplugin_newsplus/latest_news.html:3
 msgid "Latest news"
 msgstr "Aktuelle News"
 
@@ -96,10 +96,10 @@ msgstr "News-Feed"
 msgid "A feed full of news"
 msgstr "Ein Feed voller Neuigkeiten"
 
-#: templates/cmsplugin_news/latest_news.html:15
+#: templates/cmsplugin_newsplus/latest_news.html:15
 msgid "No news yet"
 msgstr "Keine News vorhanden"
 
-#: templates/cmsplugin_news/latest_news.html:17
+#: templates/cmsplugin_newsplus/latest_news.html:17
 msgid "Archive"
 msgstr "Archiv"

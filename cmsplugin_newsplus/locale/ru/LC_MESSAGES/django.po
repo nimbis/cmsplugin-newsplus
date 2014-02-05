@@ -45,7 +45,7 @@ msgstr "Отменить публикацию выбранных новосте�
 msgid "News App"
 msgstr "Приложение новости"
 
-#: cms_plugins.py:15 templates/cmsplugin_news/latest_news.html:3
+#: cms_plugins.py:15 templates/cmsplugin_newsplus/latest_news.html:3
 msgid "Latest news"
 msgstr "Последние новости"
 
@@ -115,10 +115,10 @@ msgstr "Новостная лента"
 msgid "A feed full of news"
 msgstr "Новостная лента полная новостей"
 
-#: templates/cmsplugin_news/latest_news.html:15
+#: templates/cmsplugin_newsplus/latest_news.html:15
 msgid "No news yet"
 msgstr "Новостей нет"
 
-#: templates/cmsplugin_news/latest_news.html:17
+#: templates/cmsplugin_newsplus/latest_news.html:17
 msgid "Archive"
 msgstr "Архив"
