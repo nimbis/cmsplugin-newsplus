@@ -7,7 +7,7 @@ reqs = parse_requirements("requirements/common.txt")
 # setup the project
 setup(
     name='cmsplugin-newsplus',
-    version='0.1',
+    version='0.1.1',
     description='Simple news plugin for django-cms 3.x',
     long_description=open('README.rst').read(),
     author='Eric Amador',
