@@ -1,17 +1,10 @@
-from setuptools import setup, find_packages
+from setuptools import setup
+from pip.req import parse_requirements
 
+# parse requirements
+reqs = parse_requirements("requirements/common.txt")
 
-base_requirements = [
-    'django-cms >= 2.0',
-    'django >= 1.5',
-    'djangocms-text-ckeditor >= 2.0'
-]
-install_requirements = base_requirements + []
-test_requirements = base_requirements + [
-    'PIL',
-]
-
-
+# setup the project
 setup(
     name='cmsplugin-newsplus',
     version='0.1',
@@ -20,13 +13,7 @@ setup(
     author='Eric Amador',
     author_email='eric.amador14@gmail.com',
     url='https://github.com/amadornimbis/cmsplugin-newsplus/',
-    packages=find_packages(),
-    package_data={'cmsplugin_newsplus': [
-        'locale/de/LC_MESSAGES/*',
-        'templates/cmsplugin_newsplus/*.html',
-        'templates/cmsplugin_newsplus/feeds/*.html',
-        'templates/cmsplugin_newsplus/widgets/*.html']
-    },
+    packages=['cmsplugin_newsplus'],
     license='BSD',
     classifiers=[
         'Development Status :: 4 - Beta',
@@ -38,8 +25,7 @@ setup(
         'Framework :: Django',
     ],
     include_package_data=True,
-    install_requires=install_requirements,
-    tests_require=test_requirements,
-    test_suite='runtests.main',
+    install_requires=[str(x).split(' ')[0] for x in reqs],
+    tests_suite='tests.main',
     zip_safe=False
 )

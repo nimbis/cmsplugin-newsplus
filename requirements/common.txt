@@ -1,0 +1,4 @@
+django>=1.5
+django-cms>=2.0
+djangocms-text-ckeditor>=2.0
+Pillow
