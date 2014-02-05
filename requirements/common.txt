@@ -1,4 +1,5 @@
 django>=1.5
-django-cms>=2.0
+# django-cms>=3.0
+git+https://github.com/divio/django-cms.git@develop#egg=django_cms
 djangocms-text-ckeditor>=2.0
 Pillow
