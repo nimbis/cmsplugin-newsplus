@@ -26,6 +26,5 @@ setup(
     ],
     include_package_data=True,
     install_requires=[str(x).split(' ')[0] for x in reqs],
-    tests_suite='tests.main',
     zip_safe=False
 )
