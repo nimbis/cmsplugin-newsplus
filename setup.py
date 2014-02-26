@@ -5,6 +5,7 @@ req_lines = [line.strip() for line in open(
     'requirements/common.txt').readlines()]
 install_reqs = list(filter(None, req_lines))
 
+
 print req_lines
 print install_reqs
 
