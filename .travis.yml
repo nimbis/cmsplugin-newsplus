@@ -12,3 +12,5 @@ script:
   - make test
   - make coverage
   - make doc
+after_success:
+  - coveralls
