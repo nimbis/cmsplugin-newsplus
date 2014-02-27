@@ -15,7 +15,7 @@ It is based off of a fork of cmsplugin-news located here:
 https://bitbucket.org/zerok/cmsplugin-news
 
 The goal of newsplus is to provide the simplicity of cmsplugin-news while
-added some additional functionality, such as images.
+adding some additional functionality, such as images.
 
 
 Requires
@@ -38,10 +38,6 @@ Setup
 
 * If you're using South execute `python manage.py migrate`, Otherwise run
   `python manage.py syncdb` within your project directory.
-
-* In order to integrate the news-plugin with your website, create a page and add
-  the news application (and optionally the news menu) to it by modifying the
-  relevant "advanced settings" of it.
 
 
 History
