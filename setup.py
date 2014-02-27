@@ -17,7 +17,7 @@ setup(
     long_description=open('README.rst').read(),
     author='Eric Amador',
     author_email='eric.amador14@gmail.com',
-    url='https://github.com/amadornimbis/cmsplugin-newsplus/',
+    url='https://github.com/nimbis/cmsplugin-newsplus/',
     packages=['cmsplugin_newsplus'],
     license='BSD',
     classifiers=[
