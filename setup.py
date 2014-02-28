@@ -1,4 +1,4 @@
-from setuptools import setup
+from setuptools import setup, find_packages
 
 # parse requirements
 req_lines = [line.strip() for line in open(
@@ -18,7 +18,7 @@ setup(
     author='Eric Amador',
     author_email='eric.amador14@gmail.com',
     url='https://github.com/nimbis/cmsplugin-newsplus/',
-    packages=['cmsplugin_newsplus'],
+    packages=find_packages(),
     license='BSD',
     classifiers=[
         'Development Status :: 4 - Beta',
