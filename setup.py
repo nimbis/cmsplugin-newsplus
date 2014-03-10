@@ -6,9 +6,6 @@ req_lines = [line.strip() for line in open(
 install_reqs = list(filter(None, req_lines))
 
 
-print req_lines
-print install_reqs
-
 # setup the project
 setup(
     name='cmsplugin-newsplus',
