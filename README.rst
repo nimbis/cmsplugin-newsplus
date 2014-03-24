@@ -9,7 +9,7 @@ News plugin for django-cms 3.0b3
 
 
 
-This plugin provides a simple news feature for django-cms 3.0b3 and newer.
+This plugin provides a simple news feature for django-cms 2.4 and newer.
 
 It is based off of a fork of cmsplugin-news located here:
 https://bitbucket.org/zerok/cmsplugin-news
@@ -31,12 +31,11 @@ Setup
 
 * Install django-cms (if you haven't done so already)
 
-* Download this package and run `python setup.py install` or add it in
-  some other way to your current PYTHON_PATH
+* Run `pip install cmsplugin-newsplus` or download this package and `python setup.py install`
 
 * Add 'cmsplugin_newsplus' to INSTALLED_APPS
 
-* If you're using South execute `python manage.py migrate`, Otherwise run
+* If you're using South run `python manage.py migrate`, Otherwise run
   `python manage.py syncdb` within your project directory.
 
 
