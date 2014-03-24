@@ -9,7 +9,7 @@ install_reqs = list(filter(None, req_lines))
 # setup the project
 setup(
     name='cmsplugin-newsplus',
-    version='0.1.3',
+    version='0.1.4',
     description='Simple news plugin for django-cms 3.x',
     long_description=open('README.rst').read(),
     author='Nimbis Services, Inc.',
