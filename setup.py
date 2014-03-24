@@ -1,4 +1,4 @@
-from setuptools import setup
+from setuptools import setup, find_packages
 
 # parse requirements
 req_lines = [line.strip() for line in open(
@@ -6,19 +6,16 @@ req_lines = [line.strip() for line in open(
 install_reqs = list(filter(None, req_lines))
 
 
-print req_lines
-print install_reqs
-
 # setup the project
 setup(
     name='cmsplugin-newsplus',
-    version='0.1.2',
+    version='0.1.3',
     description='Simple news plugin for django-cms 3.x',
     long_description=open('README.rst').read(),
-    author='Eric Amador',
-    author_email='eric.amador14@gmail.com',
-    url='https://github.com/amadornimbis/cmsplugin-newsplus/',
-    packages=['cmsplugin_newsplus'],
+    author='Nimbis Services, Inc.',
+    author_email='devops@nimbisservices.com',
+    url='https://github.com/nimbis/cmsplugin-newsplus/',
+    packages=find_packages(),
     license='BSD',
     classifiers=[
         'Development Status :: 4 - Beta',
