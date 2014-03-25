@@ -1,15 +1,11 @@
 """
-Tests for the cmsplugin_newsplus app
+Tests for the cmsplugin_newsplus
 """
-
-from django.utils.timezone import utc
-import datetime
-
 from django.test import TestCase
-
 from cmsplugin_newsplus.models import News
-
+from django.utils.timezone import utc
 from . import settings
+import datetime
 
 
 class NewsTest(TestCase):
@@ -33,6 +29,7 @@ class NewsTest(TestCase):
             is_published=False,
             pub_date=self.yesterday,
         )
+        self.assertEquals(unpublished.__unicode__(), 'Unpublished News')
         self.assertEquals(News.published.count(), 0)
         unpublished.is_published = True
         unpublished.save()
