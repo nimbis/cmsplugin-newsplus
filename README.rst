@@ -4,8 +4,8 @@ News plugin for django-cms 3.0b3
 .. image:: https://travis-ci.org/nimbis/cmsplugin-newsplus.png?branch=master
   :target: https://travis-ci.org/nimbis/cmsplugin-newsplus
 
-.. image:: https://coveralls.io/repos/nimbis/cmsplugin-newsplus/badge.png?branch=develop
-  :target: https://coveralls.io/r/nimbis/cmsplugin-newsplus?branch=develop
+.. image:: https://coveralls.io/repos/nimbis/cmsplugin-newsplus/badge.png?branch=master
+  :target: https://coveralls.io/r/nimbis/cmsplugin-newsplus?branch=master
 
 
 
