@@ -24,7 +24,7 @@ def get_nodes(request):
     for item in items:
         date = item.pub_date
 
-        if not date.year in years_done:
+        if date.year not in years_done:
             years_done.append(date.year)
             year_node = NavigationNode(date.year,
                                        reverse('news_archive_year',
@@ -34,7 +34,7 @@ def get_nodes(request):
             months_done = []
             res.append(year_node)
 
-        if not date.month in months_done:
+        if date.month not in months_done:
             months_done.append(date.month)
             month_node = NavigationNode(
                 datetime.strftime(date, '%B'),
@@ -48,7 +48,7 @@ def get_nodes(request):
             days_done = []
             year_node.childrens.append(month_node)
 
-        if not date.day in days_done:
+        if date.day not in days_done:
             days_done.append(date.day)
             day_node = NavigationNode(
                 datetime.strftime(date, '%d'),
@@ -62,7 +62,7 @@ def get_nodes(request):
             slug_done = []
             month_node.childrens.append(day_node)
 
-        if not item.slug in slug_done:
+        if item.slug not in slug_done:
             slug_done.append(item.slug)
             item_node = NavigationNode(
                 item.title, item.get_absolute_url(),

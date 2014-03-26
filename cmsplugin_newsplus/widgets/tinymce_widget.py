@@ -91,9 +91,10 @@ class TinyMCEEditor(TinyMCE):
                     'tinyMCE_GZ.init(%s);</script>') % (c_json))
         html.append(
             (u'<script type="text/javascript">%s;\ntinyMCE.init(%s);'
-                '</script>') % (self.render_additions(
-                name,
-                value,
-                attrs),
-                json))
+                '</script>') % (
+                self.render_additions(
+                    name,
+                    value,
+                    attrs),
+                    json))
         return mark_safe(u'\n'.join(html))
