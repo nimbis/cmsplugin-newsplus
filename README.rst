@@ -1,8 +1,8 @@
 News plugin for django-cms 3.0b3
 =================================
 
-.. image:: https://travis-ci.org/nimbis/cmsplugin-newsplus.png?branch=master
-  :target: https://travis-ci.org/nimbis/cmsplugin-newsplus
+.. image:: https://coveralls.io/repos/nimbis/cmsplugin-newsplus/badge.png?branch=master
+  :target: https://coveralls.io/r/nimbis/cmsplugin-newsplus?branch=master
 
 This plugin provides a simple news feature for django-cms 2.4 and newer.
 
@@ -30,12 +30,18 @@ Setup
 
 * Add 'cmsplugin_newsplus' to INSTALLED_APPS
 
+* Add to your project's urls.py:
+  ``url(r'^news/', include('cmsplugin_newsplus.urls')),``
+
 * If you're using South run `python manage.py migrate`, Otherwise run
   `python manage.py syncdb` within your project directory.
 
 
 History
 -------
+
+0.1.5:
+    * Added missing urls.py step to Setup section of the README.
 
 0.1.2:
     * Fixed compatibility with pip <= 1.1
