@@ -35,6 +35,8 @@ Setup
 
 * Add 'cmsplugin_newsplus' to INSTALLED_APPS
 
+* Add `url(r'^news/', include('cmsplugin_newsplus.urls')),` to your project's urls.py
+
 * If you're using South run `python manage.py migrate`, Otherwise run
   `python manage.py syncdb` within your project directory.
 
