@@ -45,16 +45,24 @@ Setup
 History
 -------
 
+0.1.6:
+
+    * Update migrations to Django 1.7
+
 0.1.5:
+
     * Added missing urls.py step to Setup section of the README.
 
 0.1.2:
+
     * Fixed compatibility with pip <= 1.1
 
 0.1.1:
+
     * Compatility fixes for Django 1.6
     * Cleaned up repo.
     * Added Travis integration.
 
 0.1.0:
+
     * Initial commit.
