@@ -1,10 +1,6 @@
-from setuptools import setup, find_packages
+#!/usr/bin/env python
 
-# parse requirements
-req_lines = [line.strip() for line in open(
-    'requirements/common.txt').readlines()]
-install_reqs = list(filter(None, req_lines))
-
+from setuptools import find_packages, setup
 
 # setup the project
 setup(
@@ -15,7 +11,7 @@ setup(
     author='Nimbis Services, Inc.',
     author_email='devops@nimbisservices.com',
     url='https://github.com/nimbis/cmsplugin-newsplus/',
-    packages=find_packages(),
+    packages=find_packages(exclude=["tests", ]),
     license='BSD',
     classifiers=[
         'Development Status :: 4 - Beta',
@@ -27,6 +23,11 @@ setup(
         'Framework :: Django',
     ],
     include_package_data=True,
-    install_requires=install_reqs,
+    install_requires=[
+        'Django',
+        'django-cms >= 2.4',
+        'djangocms-text-ckeditor >= 2.0',
+        'Pillow',
+    ],
     zip_safe=False
 )
