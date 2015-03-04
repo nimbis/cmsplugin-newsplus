@@ -7,3 +7,5 @@ htmlcov
 _build
 .coverage
 .DS_Store
+dist/
+build/
