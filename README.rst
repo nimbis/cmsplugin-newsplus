@@ -45,7 +45,7 @@ Setup
 History
 -------
 
-0.2.0:
+0.1.8:
 
     * Adding missing Django 1.7 migration.
 
