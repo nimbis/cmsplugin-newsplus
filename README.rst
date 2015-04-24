@@ -45,6 +45,10 @@ Setup
 History
 -------
 
+0.1.8:
+
+    * Adding missing Django 1.7 migration.
+
 0.1.7:
 
     * Removing parsing of requirements from requirements/common.txt from setup.py
