@@ -22,7 +22,7 @@ Requires
 ----------------
 
 * django-cms >= 2.4
-* django >= 1.5
+* django < 1.8
 * djangocms-text-ckeditor >= 2.0
 
 
