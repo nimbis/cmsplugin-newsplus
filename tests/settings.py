@@ -114,9 +114,9 @@ INSTALLED_APPS = (
     'django.contrib.sites',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'mptt',
     'djangocms_text_ckeditor',
     'cms',
+    'treebeard',
     'cmsplugin_newsplus',
     # Uncomment the next line to enable the admin:
     # 'django.contrib.admin',
