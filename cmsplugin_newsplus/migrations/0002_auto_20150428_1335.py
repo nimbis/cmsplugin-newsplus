@@ -2,8 +2,7 @@
 from __future__ import unicode_literals
 
 from django.db import models, migrations
-import datetime
-from django.utils.timezone import utc
+import django.utils.timezone
 
 
 class Migration(migrations.Migration):
@@ -16,7 +15,7 @@ class Migration(migrations.Migration):
         migrations.AlterField(
             model_name='news',
             name='pub_date',
-            field=models.DateTimeField(default=datetime.datetime(2015, 4, 24, 19, 42, 20, 509733, tzinfo=utc), verbose_name='Publication date'),
+            field=models.DateTimeField(default=django.utils.timezone.now, verbose_name='Publication date'),
             preserve_default=True,
         ),
     ]

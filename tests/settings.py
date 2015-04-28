@@ -114,9 +114,9 @@ INSTALLED_APPS = (
     'django.contrib.sites',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'mptt',
     'djangocms_text_ckeditor',
     'cms',
+    'treebeard',
     'cmsplugin_newsplus',
     # Uncomment the next line to enable the admin:
     # 'django.contrib.admin',
@@ -126,10 +126,6 @@ INSTALLED_APPS = (
 
 
 MIGRATION_MODULES = {
-    'cms': 'cms.migrations_django',
-    'menus': 'menus.migrations_django',
-
-    # Add also the following modules if you're using these plugins:
     'djangocms_file': 'djangocms_file.migrations_django',
     'djangocms_flash': 'djangocms_flash.migrations_django',
     'djangocms_googlemap': 'djangocms_googlemap.migrations_django',
@@ -170,3 +166,5 @@ LOGGING = {
         },
     }
 }
+
+TEST_RUNNER = 'django.test.runner.DiscoverRunner'

@@ -17,7 +17,7 @@ Requires
 ----------------
 
 * django-cms >= 2.4
-* django >= 1.5
+* django < 1.8
 * djangocms-text-ckeditor >= 2.0
 
 
@@ -40,9 +40,13 @@ Setup
 History
 -------
 
+0.1.9:
+
+    * Removing broken migration introduced in v0.1.8 and replacing it with a working one.
+
 0.1.8:
 
-    * Adding missing Django 1.7 migration.
+    * Adding missing Django 1.7 migration. This version should not be used because the migration added in this version was broken. The default publication date was datetime.now() which was being evaluated each time makemigrations would be called.
 
 0.1.7:
 
