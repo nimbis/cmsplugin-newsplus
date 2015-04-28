@@ -8,7 +8,7 @@ import django.utils.timezone
 class Migration(migrations.Migration):
 
     dependencies = [
-        ('cmsplugin_newsplus', '0002_auto_20150424_1542'),
+        ('cmsplugin_newsplus', '0001_initial'),
     ]
 
     operations = [
