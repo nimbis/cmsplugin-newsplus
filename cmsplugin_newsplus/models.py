@@ -20,7 +20,6 @@ class PublishedNewsManager(models.Manager):
             .filter(
                 pub_date__lte=datetime.datetime.utcnow().replace(tzinfo=utc))
 
-
 class News(models.Model):
     """
     News
@@ -37,7 +36,7 @@ class News(models.Model):
     is_published = models.BooleanField(_('Published'), default=False)
     pub_date = models.DateTimeField(
         _('Publication date'),
-        default=datetime.datetime.utcnow().replace(tzinfo=utc))
+        default=lambda: datetime.datetime.utcnow().replace(tzinfo=utc))
 
     created = models.DateTimeField(auto_now_add=True, editable=False)
     updated = models.DateTimeField(auto_now=True, editable=False)
