@@ -5,7 +5,7 @@ install:
   - make reqs
 script:
   - make pep8
-  - make flake8 FLAKE8_OPTS=--exit-zero
+  - make flake8
   - make test
   - make coverage
   - make doc
