@@ -9,6 +9,7 @@ from cmsplugin_newsplus.models import News
 class NewsForm(forms.ModelForm):
     class Meta:
         model = News
+        fields = '__all__'
 
     def _get_widget(self):
         plugins = plugin_pool.get_text_enabled_plugins(placeholder=None,
