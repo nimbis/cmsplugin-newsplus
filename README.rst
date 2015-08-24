@@ -17,7 +17,7 @@ Requires
 ----------------
 
 * django-cms >= 2.4
-* django < 1.8
+* django >= 1.4
 * djangocms-text-ckeditor >= 2.0
 
 
@@ -39,6 +39,10 @@ Setup
 
 History
 -------
+
+0.1.10:
+
+    * Adding Django 1.8 support by specifying fields in NewsForm.
 
 0.1.9:
 
