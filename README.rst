@@ -45,6 +45,10 @@ Setup
 History
 -------
 
+0.1.10:
+
+    * Adding Django 1.8 support by specifying fields in NewsForm.
+
 0.1.9:
 
     * Removing broken migration introduced in v0.1.8 and replacing it with a working one.
