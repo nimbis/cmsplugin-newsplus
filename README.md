@@ -37,6 +37,10 @@ Setup
 * If you're using South run `python manage.py migrate`, Otherwise run
   `python manage.py syncdb` within your project directory.
 
+Contributing
+------------
+
+See the [Contributing Guidelines](CONTRIBUTING.md).
 
 History
 -------
