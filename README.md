@@ -1,8 +1,9 @@
-News plugin for django-cms 3.0b3
+cmsplugin-newsplus
 =================================
 
-.. image:: https://coveralls.io/repos/nimbis/cmsplugin-newsplus/badge.png?branch=master
-  :target: https://coveralls.io/r/nimbis/cmsplugin-newsplus?branch=master
+[![Build Status](https://travis-ci.org/nimbis/cmsplugin-newsplus.svg?branch=master)](https://travis-ci.org/nimbis/cmsplugin-newsplus)
+
+[![Coverage Status](https://coveralls.io/repos/nimbis/cmsplugin-newsplus/badge.svg?branch=master&service=github)](https://coveralls.io/github/nimbis/cmsplugin-newsplus?branch=master)
 
 This plugin provides a simple news feature for django-cms 2.4 and newer.
 
