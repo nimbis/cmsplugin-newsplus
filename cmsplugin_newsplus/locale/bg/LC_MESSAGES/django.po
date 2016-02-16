@@ -1,0 +1,123 @@
+# Bulgarian translations for cmsplugin-newsplus.
+# Copyright (C) 2015 Harro van der Klauw, Horst Gutmann, Nimbis Services, Inc.
+# This file is distributed under the same license as the cmsplugin-newsplus package.
+# Venelin Stoykov <vkstoykov@gmail.com>, 2015.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: cmsplugin-newsplus 0.1.10\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-09-14 11:37+0300\n"
+"PO-Revision-Date: 2015-09-14 11:37+0300\n"
+"Last-Translator: Venelin Stoykov <vkstykov@gmail.com>\n"
+"Language-Team: BG <LL@li.org>\n"
+"Language: bg\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: admin.py:44
+#, python-format
+msgid "%(count)d newsitem was published"
+msgid_plural "%(count)d newsitems were published"
+msgstr[0] "%(count)d новина беше публикувана"
+msgstr[1] "%(count)d новини бяха публикувани"
+
+#: admin.py:47
+msgid "Publish selected news"
+msgstr "Публикувай избраните новини"
+
+#: admin.py:55
+#, python-format
+msgid "%(count)d newsitem was unpublished"
+msgid_plural "%(count)d newsitems were unpublished"
+msgstr[0] "%(count)d новина беше отпубликувана"
+msgstr[1] "%(count)d новини бяха отпубликувани"
+
+#: admin.py:58
+msgid "Unpublish selected news"
+msgstr "Отпубликувай избраните новини"
+
+#: cms_app.py:10
+msgid "News App"
+msgstr "Приложение Новини"
+
+#: cms_plugins.py:15 templates/cmsplugin_newsplus/latest_news.html:3
+msgid "Latest news"
+msgstr "Послени новини"
+
+#: menu.py:14
+msgid "News menu"
+msgstr "Меню новини"
+
+#: models.py:26
+msgid "Title"
+msgstr "Заглавие"
+
+#: models.py:27
+msgid "Slug"
+msgstr "Слъг"
+
+#: models.py:28
+msgid ""
+"A slug is a short name which uniquely identifies the news item for this day"
+msgstr "Кратко име, използвано в URL адреса, което трябва по уникален начин да идентифицира новината за този ден"
+
+#: models.py:31
+msgid "Excerpt"
+msgstr "Кратко описание"
+
+#: models.py:32
+msgid "Content"
+msgstr "Съдържание"
+
+#: models.py:34
+msgid "Published"
+msgstr "Публикувано"
+
+#: models.py:36
+msgid "Publication date"
+msgstr "Дата на публикуване"
+
+#: models.py:45
+msgid "Link"
+msgstr "Връзка"
+
+#: models.py:46
+msgid ""
+"This link will be used a absolute url for this item and replaces the view "
+"logic. <br />Note that by default this only applies for items with  an empty "
+"\"content\" field."
+msgstr ""
+"Този адрес ще бъде използван като абсолютен адрес за тази новина.<br />"
+"Това важи само за новините, които са с празно поле за съдъжание."
+
+#: models.py:53 models.py:54
+msgid "News"
+msgstr "Новини"
+
+#: models.py:80
+msgid "Number of news items to show"
+msgstr "Брой новини за показване"
+
+#: models.py:81
+msgid "Limits the number of items that will be displayed"
+msgstr "Ограничава броя на новините, които се показват"
+
+#: settings.py:26
+msgid "News feed"
+msgstr ""
+
+#: settings.py:30
+msgid "A feed full of news"
+msgstr ""
+
+#: templates/cmsplugin_newsplus/latest_news.html:15
+msgid "No news yet"
+msgstr "Няма новини"
+
+#: templates/cmsplugin_newsplus/latest_news.html:17
+msgid "Archive"
+msgstr "Архив"

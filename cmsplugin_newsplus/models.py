@@ -2,8 +2,6 @@ from django.db import models
 from django.utils.translation import ugettext_lazy as _
 from django.core.urlresolvers import reverse
 from django.utils import timezone
-from django.utils.timezone import utc
-import datetime
 
 from cms.models import CMSPlugin
 
@@ -20,10 +18,6 @@ class PublishedNewsManager(models.Manager):
             is_published=True).filter(pub_date__lte=timezone.now())
 
 
-def get_default_pub_date():
-    return datetime.datetime.utcnow().replace(tzinfo=utc)
-
-
 class News(models.Model):
     """
     News
@@ -38,7 +32,9 @@ class News(models.Model):
     content = models.TextField(_('Content'), blank=True)
 
     is_published = models.BooleanField(_('Published'), default=False)
-    pub_date = models.DateTimeField(_('Publication date'), default=get_default_pub_date)
+    pub_date = models.DateTimeField(
+        _('Publication date'),
+        default=timezone.now)
 
     created = models.DateTimeField(auto_now_add=True, editable=False)
     updated = models.DateTimeField(auto_now=True, editable=False)
