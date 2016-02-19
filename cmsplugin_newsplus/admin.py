@@ -28,7 +28,7 @@ class NewsAdmin(admin.ModelAdmin):
     save_as = True
     save_on_top = True
 
-    def queryset(self, request):
+    def get_queryset(self, request):
         """
             Override to use the objects and not just the default
             visibles only.
