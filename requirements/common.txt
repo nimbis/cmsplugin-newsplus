@@ -1,4 +1,0 @@
-Django<1.9
-django-cms
-djangocms-text-ckeditor
-Pillow
