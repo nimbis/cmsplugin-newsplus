@@ -7,7 +7,6 @@ setup(
     name='cmsplugin-newsplus',
     version='1.0.0',
     description='Simple news plugin for django-cms 3.x',
-    long_description=open('README.rst').read(),
     author='Nimbis Services, Inc.',
     author_email='devops@nimbisservices.com',
     url='https://github.com/nimbis/cmsplugin-newsplus/',
