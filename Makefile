@@ -1,5 +1,5 @@
 
-.PHONY: test pep8 clean coverage doc check-venv check-reqs check-venv
+.PHONY: test pep8 clean coverage doc check-venv check-venv
 
 # clean out potentially stale pyc files
 clean:
@@ -10,10 +10,6 @@ check-venv:
 ifndef VIRTUAL_ENV
 	$(error VIRTUAL_ENV is undefined, try "workon" command)
 endif
-
-# check that requirements have been installed
-check-reqs: check-venv
-	-piplint requirements.txt
 
 # Install pip requirements.txt file
 reqs: check-venv
@@ -43,7 +39,7 @@ test: check-venv clean
 # doc
 #
 
-doc: check-reqs
+doc:
 	cd doc; make html
 	@echo "See ./doc/_build/index.html for html documentation."
 
@@ -53,7 +49,7 @@ doc: check-reqs
 
 COVERAGE_INCLUDE='cmsplugin_newsplus/*'
 
-coverage: check-reqs
+coverage:
 	coverage erase
 	-coverage run --include=$(COVERAGE_INCLUDE) ./manage.py test
 	coverage report
