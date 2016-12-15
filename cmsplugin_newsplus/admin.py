@@ -57,4 +57,5 @@ class NewsAdmin(admin.ModelAdmin):
                                     rows_updated) % {'count': rows_updated})
     make_unpublished.short_description = _('Unpublish selected news')
 
+
 admin.site.register(News, NewsAdmin)

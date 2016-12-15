@@ -9,6 +9,7 @@ def get_setting(name, default):
     parent_name = "CMSPLUGIN_NEWS_{0}".format(name)
     return getattr(django_settings, parent_name, default)
 
+
 """
     Disables the latest news plugin
     Defaults to false
