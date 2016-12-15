@@ -1,11 +1,10 @@
-from django.conf.urls import patterns, url
+from django.conf.urls import url
 
 from . import feeds
 from . import views
 
 
-urlpatterns = patterns(
-    'django.views.generic.date_based',
+urlpatterns = [
     url(r'^$',
         views.ArchiveIndexView.as_view(), name='news_archive_index'),
 
@@ -23,4 +22,4 @@ urlpatterns = patterns(
         views.DetailView.as_view(), name='news_detail'),
 
     url(r'^feed/$', feeds.NewsFeed())
-)
+]
