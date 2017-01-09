@@ -27,5 +27,6 @@ class CMSLatestNewsPlugin(CMSPluginBase):
         })
         return context
 
+
 if not settings.DISABLE_LATEST_NEWS_PLUGIN:
     plugin_pool.register_plugin(CMSLatestNewsPlugin)
