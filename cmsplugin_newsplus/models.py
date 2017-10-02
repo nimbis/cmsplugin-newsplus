@@ -61,7 +61,7 @@ class News(models.Model):
         if settings.LINK_AS_ABSOLUTE_URL and self.link:
             if settings.USE_LINK_ON_EMPTY_CONTENT_ONLY and not self.content:
                 return self.link
-        return reverse('news_detail',
+        return reverse('cmsplugin_newsplus:news_detail',
                        kwargs={'year': self.pub_date.strftime("%Y"),
                                'month': self.pub_date.strftime("%m"),
                                'day': self.pub_date.strftime("%d"),

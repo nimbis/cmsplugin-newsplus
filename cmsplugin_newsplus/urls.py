@@ -3,7 +3,7 @@ from django.conf.urls import url
 from . import feeds
 from . import views
 
-
+app_name = 'cmsplugin_newsplus'
 urlpatterns = [
     url(r'^$',
         views.ArchiveIndexView.as_view(), name='news_archive_index'),
