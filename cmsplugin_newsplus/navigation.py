@@ -27,7 +27,7 @@ def get_nodes(request):
         if date.year not in years_done:
             years_done.append(date.year)
             year_node = NavigationNode(date.year,
-                                       reverse('news_archive_year',
+                                       reverse('cmsplugin_newsplus:news_archive_year',
                                                kwargs=dict(year=date.year)),
                                        'newsitem-year-%d' % (date.year,))
             year_node.childrens = []
@@ -38,7 +38,7 @@ def get_nodes(request):
             months_done.append(date.month)
             month_node = NavigationNode(
                 datetime.strftime(date, '%B'),
-                reverse('news_archive_month', kwargs=dict(
+                reverse('cmsplugin_newsplus:news_archive_month', kwargs=dict(
                     year=date.year,
                     month=datetime.strftime(date, '%m'))),
                 'newsitem-month-%d.%d' % (
@@ -52,7 +52,7 @@ def get_nodes(request):
             days_done.append(date.day)
             day_node = NavigationNode(
                 datetime.strftime(date, '%d'),
-                reverse('news_archive_day', kwargs=dict(
+                reverse('cmsplugin_newsplus:news_archive_day', kwargs=dict(
                     year=date.year,
                     month=datetime.strftime(date, '%m'),
                     day=datetime.strftime(date, '%d'))),

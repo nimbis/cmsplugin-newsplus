@@ -3,7 +3,7 @@
 <ul>
 {% for date in date_list %}
   <li>
-    <a href="{% url 'news_archive_month' year=date|date:'Y' month=date|date:'m'  %}">{{ date|date:"F" }}</a>
+    <a href="{% url 'cmsplugin_newsplus:news_archive_month' year=date|date:'Y' month=date|date:'m'  %}">{{ date|date:"F" }}</a>
   </li>
 {% empty %}
   <li>No news for this year</li>

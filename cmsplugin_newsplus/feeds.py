@@ -14,7 +14,7 @@ class NewsFeed(Feed):
 
     @property
     def link(self):
-        return reverse('news_archive_index')
+        return reverse('cmsplugin_newsplus:news_archive_index')
 
     def items(self):
         return models.News.published.all()[:settings.FEED_SIZE]
