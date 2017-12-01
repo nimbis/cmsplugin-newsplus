@@ -17,8 +17,8 @@ adding some additional functionality, such as images.
 Requires
 ----------------
 
-* django-cms >= 2.4
-* django >= 1.4
+* django-cms >= 3.3
+* django >= 1.8
 * djangocms-text-ckeditor >= 2.0
 
 
