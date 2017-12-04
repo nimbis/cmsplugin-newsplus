@@ -55,3 +55,10 @@ coverage:
 	coverage report
 	coverage html
 	@echo "See ./htmlcov/index.html for coverage report"
+
+
+#
+# travis tests
+#
+
+travis-tests: pep8 flake8 coverage
