@@ -5,7 +5,7 @@ from setuptools import find_packages, setup
 # setup the project
 setup(
     name='cmsplugin-newsplus',
-    version='1.0.0',
+    version='1.0.1',
     description='Simple news plugin for django-cms 3.x',
     author='Nimbis Services, Inc.',
     author_email='devops@nimbisservices.com',

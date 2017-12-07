@@ -45,6 +45,11 @@ See the [Contributing Guidelines](CONTRIBUTING.md).
 History
 -------
 
+1.0.1 (December 7, 2017):
+
+    * Fix travis-testing makefile target.
+    * Limit Django support to <2.0.
+
 0.1.10:
 
     * Adding Django 1.8 support by specifying fields in NewsForm.
