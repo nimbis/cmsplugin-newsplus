@@ -45,6 +45,10 @@ See the [Contributing Guidelines](CONTRIBUTING.md).
 History
 -------
 
+1.1.0 (December 7, 2017):
+
+    * Add url namespaces for Django >1.8.  Much thanks to jrutila (https://github.com/jrutila) for this contribution!
+
 1.0.1 (December 7, 2017):
 
     * Fix travis-testing makefile target.
